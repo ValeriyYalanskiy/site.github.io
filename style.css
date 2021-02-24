@@ -1,0 +1,477 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+    background: #b6d1da;
+}
+.header{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    background-color:blue;
+    padding: 0 0 10px 0;
+    text-shadow: 3px 3px 10px #000;
+    margin: 0;
+/*    border: 2px solid #000;*/
+}
+.GLAVNAYA{
+    position: relative;
+    left: 105%;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Verdana;
+    text-decoration: underline;
+    
+}
+
+.obvodka2{
+    position: absolute;
+    width: 210px;
+    height: 504px;
+    margin: 34px 0 0px 5px;
+    background: #bee4e7;
+    border-radius: 5px;
+}
+.obvodka{
+    position: relative;
+    margin: -680px 0 0 15px;
+    width: 220px;
+    height: 550px;
+    background: #1789a4;
+/*    margin: -680px 0 0 15px;*/
+    border-radius: 20px;
+}
+
+.side{
+    width:13.0%;/*Ширина дива менюшки*/
+    margin: 40px 0 0 10px;
+    position: absolute;
+    
+}
+.side ul{
+    width: 200px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    font-family: Verdana;
+    font-weight: 700;
+/*     outline:5px solid #feffff;*/
+    /*margin: 10px;Ширина оступа менюшки в диве*/
+}
+.menu a{
+    background: #1a5bab;
+    color: #fff;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border-bottom: 2px solid #1c1c92;
+    position: relative;
+}
+.menu li:last-child>a{
+    border-bottom: none;
+}
+.menu a:hover{
+    background: #22517f; 
+}
+.menu__list{
+    position: relative;
+   
+}
+.menu__list a{
+    background: #1a5bab;
+    color: #fff;
+    display: inline-block;
+    width: 200px;
+    border-bottom: 2px solid #1c1c92;
+    
+}
+.menu__drop{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    display: none;
+    top: 0;
+    font-weight: normal;
+    border-bottom: none;
+    
+}
+.menu__drop li>a{
+    border-bottom: none;
+    background: #1a5bab;
+}
+/*Всплывающие меню*/
+
+.menu__list:hover .menu__drop{
+    opacity: 1;
+    display: block;
+    
+}
+.menu__drop a:hover{
+    color: white;
+    background: #22517f;   
+}
+.nazva{
+    font-size: 20px;
+    font-family: Verdana;
+    margin: 10px 0 0 75px;
+    position: absolute;
+    font-weight: 700;
+    color: red;
+    text-shadow: 1px 1px 15px white; 
+}
+.main{
+    border: 2px solid white;
+    width: 99%;
+    margin: 0 0 0 8px;
+    background: white;
+    border-radius: 10px;
+    height: 690px;
+}
+.main2{
+    position: absolute;
+    width: 99%;
+    margin: 0 0 0 0;
+    background: white;
+    height: 4240px;
+}
+.pod-main{
+    border: 1px solid #fff;
+    width: 70%;
+    display: block;
+    margin: 0 0 0 250px;/*Но тут було auto*/
+}
+.main h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #3e509a;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 70px 0 0 0;
+}
+.i{
+    display: block;
+    margin: 40px auto;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50px;
+}
+.p1{
+    display: block;
+    margin: 10px auto;
+    font-size: 30px;
+    text-align: center;
+}
+/*Стиль для сторінки з історією*/
+.history{
+    font-size: 30px;
+    font-weight: 700;  
+}
+/*Стиль для сторінки з розташуванням*/
+.location1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.location2 {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.location3 {
+    margin: 50px 0 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.sps li {
+    list-style: disc;
+    font-size: 30px;
+    font-weight: 700;
+    list-style-position: inside;
+}
+/*Адміністрація*/
+.dr{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    width: 300px;
+}
+.ps{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+.zd{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    margin: 50px;
+    
+}
+.zav{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    
+}
+.director{
+    margin: 5px 0 0 0;
+    box-shadow: 1px 1px 10px black;
+}
+.tekst{
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px black;
+    
+}
+.tekst2{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration-line: underline;
+    margin: 0 0 50px 0; 
+}
+.kubik>p{
+    color: white;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    background:blue;
+    height: 32px;
+}
+.kubik{
+    margin: 0 0 10px 0;
+}
+/*Вчителі*/
+.lit1{
+    display: block;
+    position: relative;
+}
+.lit2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px;
+}
+.lit3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.lit4{
+    display: block;
+    position: relative;
+}
+.lit5{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px;
+}
+.lit6{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.mat1{
+    display: block;
+    position: relative;
+}
+.mat2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.mat3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.eng1{
+    display: block;
+    position: relative;
+}
+.eng2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.eng3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.eng4{
+    display: block;
+    position: relative;
+}
+.eng5{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.eng6{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.fiz1{
+    display: block;
+    position: relative;
+}
+.fiz2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px;
+}
+.fiz3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.ist1{
+    display: block;
+    position: relative;
+}
+.ist2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.ist3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.ist4{
+    display: block;
+    position: relative;
+}
+.ist5{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.ist6{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.inf1{
+    display: block;
+    position: relative;
+}
+.inf2{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.inf3{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px;
+}
+.inf4{
+    display: block;
+    position: relative;
+}
+.inf5{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -335px; 
+}
+.inf6{
+    display: block;
+    position:relative;
+    margin-left:auto;
+    margin-top: -338px; 
+}
+.bb{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 0 0;
+}
+.ss{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 0 21px;
+}
+.korobka{
+    display: inline-block;
+    margin: 0 auto; 
+}
+/*rozklad*/
+.str{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+/*    margin: 0 0 0 70px;*/
+}
+.str2{
+    display: inline-block;
+    width: 100px;
+    margin: 0 auto;
+}
+.str1{
+    display: block;
+    margin: 0 0 0 -140px;
+}
+.rz{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.list{
+    display: inline-block;
+}
+.list2{
+    display: inline-block;
+}
+.list3{
+    display: inline-block;
+}
